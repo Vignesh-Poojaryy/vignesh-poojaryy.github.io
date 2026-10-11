@@ -2,545 +2,629 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vignesh Poojary | VIGNESH.SI</title>
+<meta name="description" content="Vignesh Poojary's personal portfolio showcasing web development, technology, AI exploration and projects.">
 
-    <title>Vignesh Poojary | AI Portfolio</title>
+<style>
     
-<div class="photo-frame">
-    <img src="./WhatsApp%20Image%202026-10-11%20at%209.51.39%20AM.jpeg"
-    <img src="profile.jpg" alt="Vignesh Poojary Profile Photo">
-</div>
+.hero {
+    min-height: 85vh;
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 
-.photo-frame {
-    width: 290px;
-    height: 290px;
-    padding: 5px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #00f5ff, #9d4edd);
-    box-shadow: 0 0 30px #00f5ff88;
-    overflow: hidden;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 10, 28, 0.88),
+            rgba(3, 10, 28, 0.38)
+        ),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
-.photo-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+:root {
+    --cyan: #00f5ff;
+    --purple: #9d4edd;
+    --bg: #050816;
+    --panel: #0d1428;
+    --text: #f5f7ff;
+    --muted: #a8b4d0;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #050816;
-            color: #ffffff;
-            line-height: 1.6;
-        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        :root {
-            --blue: #00eaff;
-            --purple: #9b5cff;
-            --card: #10172b;
-        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 16px 7%;
+    background: rgba(5, 8, 22, 0.96);
+    border-bottom: 1px solid #202c48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
-        /* Navigation */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(5, 8, 22, 0.95);
-            border-bottom: 1px solid #1d2944;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
 
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-            color: var(--blue);
-            text-shadow: 0 0 12px var(--blue);
-        }
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
+nav a {
+    color: var(--muted);
+    font-size: 14px;
+}
 
-        nav a:hover {
-            color: var(--blue);
-        }
+nav a:hover {
+    color: var(--cyan);
+}
 
-        /* Hero section */
-        .hero {
-            min-height: 90vh;
-            padding: 70px 8%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 70px;
-            flex-wrap: wrap;
-            background:
-                radial-gradient(circle at 80% 30%, #182052 0%, transparent 35%);
-        }
+.hero {
+    min-height: 85vh;
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    background:
+        radial-gradient(ellipse at 80% 40%, #39206055, transparent 45%),
+        radial-gradient(ellipse at 10% 90%, #003b5555, transparent 40%);
+}
 
-        .hero-content {
-            max-width: 600px;
-        }
+.hero-content {
+    flex: 1 1 350px;
+    max-width: 680px;
+}
 
-        .hero-content .welcome {
-            color: var(--blue);
-            letter-spacing: 3px;
-            font-size: 14px;
-        }
+.eyebrow {
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
 
-        .hero h1 {
-            font-size: clamp(38px, 6vw, 65px);
-            line-height: 1.2;
-            margin: 15px 0;
-        }
+h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.12;
+    margin: 22px 0;
+}
 
-        .hero h1 span {
-            color: var(--blue);
-            text-shadow: 0 0 18px rgba(0, 234, 255, 0.4);
-        }
+.gradient-text {
+    background: linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
-        .hero p {
-            color: #b8c5dc;
-            margin: 20px 0;
-            font-size: 17px;
-        }
+.hero h2 {
+    color: #d5c4ff;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
 
-        .buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
+.hero p {
+    color: var(--muted);
+    max-width: 600px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            border: 1px solid var(--blue);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--blue);
-            transition: 0.3s;
-        }
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
 
-        .btn.primary {
-            background: var(--blue);
-            color: #050816;
-            font-weight: bold;
-        }
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid var(--cyan);
+    border-radius: 8px;
+    color: var(--cyan);
+    font-weight: bold;
+    transition: 0.25s;
+}
 
-        .btn:hover {
-            box-shadow: 0 0 20px rgba(0, 234, 255, 0.5);
-            transform: translateY(-3px);
-        }
+.btn.primary {
+    color: #050816;
+    background: linear-gradient(100deg, var(--cyan), #7280ff, var(--purple));
+    border: none;
+}
 
-        /* Stylish profile photo */
-        .photo-wrapper {
-            width: 290px;
-            height: 290px;
-            padding: 6px;
-            border-radius: 50%;
-            background: linear-gradient(
-                135deg,
-                var(--blue),
-                var(--purple),
-                var(--blue)
-            );
-            box-shadow:
-                0 0 25px rgba(0, 234, 255, 0.4),
-                0 0 60px rgba(155, 92, 255, 0.2);
-            animation: glow 3s infinite alternate;
-        }
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #00f5ff44;
+}
 
-        .photo-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-            border: 4px solid #050816;
-            display: block;
-        }
+/* Futuristic SI emblem — no photo required */
+.si-orb {
+    flex: 0 1 330px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #101d48, #050816 70%);
+    box-shadow: 0 0 35px #00f5ff44, 0 0 70px #9d4edd33;
+    animation: glow 3s ease-in-out infinite alternate;
+}
 
-        @keyframes glow {
-            from {
-                box-shadow: 0 0 20px #00eaff;
-            }
-            to {
-                box-shadow: 0 0 40px #9b5cff;
-            }
-        }
+.orb-ring {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 4px solid var(--cyan);
+    outline: 3px solid var(--purple);
+    outline-offset: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 30px #00eaff33, 0 0 25px #00eaff55;
+}
 
-        /* General sections */
-        section {
-            padding: 75px 8%;
-        }
+.orb-letter {
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
-        .section-title {
-            text-align: center;
-            font-size: 35px;
-            margin-bottom: 40px;
-        }
+.orb-label {
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
 
-        .section-title span {
-            color: var(--blue);
-        }
+@keyframes glow {
+    from {
+        box-shadow: 0 0 25px #00f5ff44, 0 0 50px #9d4edd22;
+    }
+    to {
+        box-shadow: 0 0 45px #00f5ff77, 0 0 80px #9d4edd55;
+    }
+}
 
-        .about-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            color: #c3cce0;
-            font-size: 17px;
-        }
+section.content-section {
+    padding: 75px 8%;
+    scroll-margin-top: 80px;
+}
 
-        /* Skills */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 18px;
-        }
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
 
-        .skill {
-            background: var(--card);
-            border: 1px solid #263451;
-            padding: 25px 15px;
-            text-align: center;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
+.section-title span {
+    color: var(--cyan);
+}
 
-        .skill:hover {
-            border-color: var(--blue);
-            transform: translateY(-6px);
-            box-shadow: 0 0 15px rgba(0, 234, 255, 0.15);
-        }
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: var(--muted);
+}
 
-        /* Projects */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 22px;
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
 
-        .project-card {
-            padding: 25px;
-            background: var(--card);
-            border: 1px solid #263451;
-            border-radius: 14px;
-            transition: 0.3s;
-        }
+.card {
+    padding: 25px;
+    border: 1px solid #243452;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #101a32, #080d1b);
+    transition: 0.25s;
+}
 
-        .project-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--purple);
-        }
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+    box-shadow: 0 0 24px #00f5ff18;
+}
 
-        .project-card h3 {
-            color: var(--blue);
-            margin-bottom: 12px;
-        }
+.card h3 {
+    color: var(--cyan);
+    margin-bottom: 10px;
+}
 
-        .project-card p {
-            color: #b8c5dc;
-            margin-bottom: 20px;
-        }
+.card p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
 
-        /* Contact */
-        .contact-box {
-            max-width: 650px;
-            margin: auto;
-            padding: 30px;
-            text-align: center;
-            background: var(--card);
-            border: 1px solid #263451;
-            border-radius: 15px;
-        }
+.skill {
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+}
 
-        .contact-box p {
-            margin: 12px 0;
-            color: #c3cce0;
-            overflow-wrap: anywhere;
-        }
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-        .contact-box a {
-            color: var(--blue);
-            text-decoration: none;
-        }
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #243452;
+    border-radius: 15px;
+    background: var(--panel);
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #9ba9c4;
-            border-top: 1px solid #1d2944;
-        }
+.contact-box p {
+    color: var(--muted);
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
 
-        /* Mobile responsive */
-        @media (max-width: 700px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
+.contact-box a:not(.btn) {
+    color: var(--cyan);
+}
 
-            nav {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 12px;
-            }
+footer {
+    padding: 25px 15px;
+    text-align: center;
+    border-top: 1px solid #202c48;
+    color: var(--muted);
+}
 
-            nav a {
-                margin: 0;
-                font-size: 14px;
-            }
+footer span {
+    color: var(--cyan);
+}
 
-            .hero {
-                text-align: center;
-                gap: 40px;
-            }
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
 
-            .hero-content {
-                order: 2;
-            }
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
 
-            .photo-wrapper {
-                width: 220px;
-                height: 220px;
-            }
+    .hero {
+        text-align: center;
+        justify-content: center;
+        gap: 35px;
+    }
 
-            .buttons {
-                justify-content: center;
-            }
+    .hero-content {
+        flex-basis: 100%;
+    }
 
-            .section-title {
-                font-size: 29px;
-            }
-        }
-    </style>
+    .buttons {
+        justify-content: center;
+    }
+
+    .si-orb {
+        width: 260px;
+        height: 260px;
+        flex-basis: 260px;
+    }
+
+    .orb-ring {
+        width: 195px;
+        height: 195px;
+    }
+
+    .orb-letter {
+        font-size: 95px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    section.content-section {
+        padding: 55px 6%;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <div class="logo">VIGNESH.P</div>
+<header>
+    <div class="logo">&lt;/&gt; VIGNESH.SI</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Home -->
+<main>
     <section class="hero" id="home">
-
         <div class="hero-content">
-            <div class="welcome">WELCOME TO MY DIGITAL WORLD</div>
+            <div class="eyebrow">WELCOME TO MY DIGITAL WORLD</div>
 
             <h1>
-                Hi, I'm <span>Vignesh Poojary</span>
+                Hi, I'm<br>
+                <span class="gradient-text">Vignesh Poojary</span>
             </h1>
 
-            <p>
-                Aspiring Developer | Technology Enthusiast |
-                Future Innovator
-            </p>
+            <h2>Aspiring Developer | AI Enthusiast | Future Innovator</h2>
 
             <p>
                 I enjoy learning new technologies, building websites
                 and creating digital experiences for the future.
+                Welcome to my personal technology portfolio.
             </p>
 
             <div class="buttons">
-                <a href="#projects" class="btn primary">
-                    Explore My Projects
+                <a class="btn primary" href="#projects">
+                    Explore My Projects →
                 </a>
-
-                <a
-                    href="https://github.com/Vignesh-Poojary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn">
-                    My GitHub
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub Profile ↗
                 </a>
             </div>
         </div>
 
-        <!-- Upload your photo as profile.jpg -->
-        <div class="photo-wrapper">
-            <img
-                src="profile.jpg"
-                alt="Vignesh Poojary profile photo">
+        <div class="si-orb" aria-label="VIGNESH SI holographic emblem">
+            <div class="orb-ring">
+                <div class="orb-letter">V</div>
+                <div class="orb-label">VIGNESH.SI</div>
+            </div>
         </div>
-
     </section>
 
-    <!-- About -->
-    <section id="about">
+    <section class="content-section" id="about">
         <h2 class="section-title">About <span>Me</span></h2>
 
-        <div class="about-content">
+        <div class="about">
             <p>
-                Hello! I'm Vignesh Poojary. I'm interested in
-                programming, web development, artificial intelligence
-                and modern technology.
+                Hello! I'm Vignesh Poojary, an aspiring developer
+                interested in technology, web development and artificial
+                intelligence. I enjoy learning, experimenting with ideas
+                and building projects to improve my skills.
             </p>
 
-            <p>
-                My goal is to improve my technical skills, create
-                useful projects and build a strong professional
-                portfolio.
-            </p>
-
-            <br>
-
-            <a
-                href="https://github.com/Vignesh-Poojary/Vignesh-Poojary"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn">
-                View My GitHub Profile README
-            </a>
+            <div class="buttons" style="justify-content:center;">
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
+                    My Profile README ↗
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
+    <section class="content-section" id="skills">
         <h2 class="section-title">My <span>Skills</span></h2>
 
-        <div class="skills-grid">
-            <div class="skill">🌐 HTML</div>
-            <div class="skill">🎨 CSS</div>
-            <div class="skill">⚡ JavaScript</div>
-            <div class="skill">🐍 Python</div>
-            <div class="skill">📂 Git & GitHub</div>
-            <div class="skill">🤖 AI Exploration</div>
+        <div class="grid">
+            <div class="card skill">
+                <div class="icon">🌐</div>
+                HTML
+                <p>Web structure</p>
+            </div>
+
+            <div class="card skill">
+                <div class="icon">🎨</div>
+                CSS
+                <p>Web design</p>
+            </div>
+
+            <div class="card skill">
+                <div class="icon">⚡</div>
+                JavaScript
+                <p>Interactive websites</p>
+            </div>
+
+            <div class="card skill">
+                <div class="icon">🐍</div>
+                Python
+                <p>Programming</p>
+            </div>
+
+            <div class="card skill">
+                <div class="icon">📂</div>
+                Git & GitHub
+                <p>Version control</p>
+            </div>
+
+            <div class="card skill">
+                <div class="icon">🤖</div>
+                AI Exploration
+                <p>Learn and innovate</p>
+            </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
+    <section class="content-section" id="projects">
         <h2 class="section-title">My <span>Projects</span></h2>
 
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>🚀 Personal Portfolio</h3>
+        <div class="grid">
+            <div class="card">
+                <h3>🚀 Portfolio Website</h3>
                 <p>
-                    A futuristic personal website showcasing my
-                    profile, skills and projects.
+                    My personal portfolio built with HTML and CSS,
+                    featuring a futuristic SI theme.
                 </p>
-
-                <a
-                    href="https://github.com/Vignesh-Poojary?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn">
-                    View Repositories
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary/vignesh-portfolio"
+                   target="_blank" rel="noopener noreferrer">
+                    View Repository ↗
                 </a>
             </div>
 
-            <div class="project-card">
+            <div class="card">
                 <h3>🐍 Snake Game</h3>
                 <p>
-                    A simple browser-based Snake game built using
-                    HTML, CSS and JavaScript.
+                    A browser game project idea using HTML, CSS
+                    and JavaScript.
                 </p>
-
-                <a
-                    href="https://github.com/Vignesh-Poojary?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn">
-                    View Code
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary?tab=repositories"
+                   target="_blank" rel="noopener noreferrer">
+                    Explore Repositories ↗
                 </a>
             </div>
 
-            <div class="project-card">
+            <div class="card">
                 <h3>✈️ Travel Website</h3>
                 <p>
-                    A travel website concept designed to showcase
-                    destinations and travel information.
+                    A website concept for exploring destinations
+                    and travel information.
                 </p>
-
-                <a
-                    href="https://github.com/Vignesh-Poojary?tab=repositories"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn">
-                    View Code
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary?tab=repositories"
+                   target="_blank" rel="noopener noreferrer">
+                    Explore Repositories ↗
                 </a>
             </div>
-
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2 class="section-title">Contact <span>Me</span></h2>
+    <section class="content-section" id="profiles">
+        <h2 class="section-title">Digital <span>Profiles</span></h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>Explore my coding projects and repositories.</p>
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
+                    Open GitHub ↗
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Profile README</h3>
+                <p>Visit my GitHub profile introduction.</p>
+                <a class="btn"
+                   href="https://github.com/Vignesh-Poojary/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
+                    View README ↗
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>LinkedIn</h3>
+                <p>Connect with me professionally.</p>
+                <a class="btn"
+                   href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Open LinkedIn ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="contact">
+        <h2 class="section-title">Let's <span>Connect</span></h2>
 
         <div class="contact-box">
-            <h3>Let's Connect!</h3>
+            <h3>Thanks for visiting VIGNESH.SI!</h3>
+
+            <p>
+                Website:
+                <a href="https://vignesh.si">vignesh.si</a>
+            </p>
 
             <p>
                 GitHub:
-                <a
-                    href="https://github.com/Vignesh-Poojary"
-                    target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://github.com/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
                     Vignesh-Poojary
                 </a>
             </p>
 
-            <p>
-                Website:
-                <a href="https://vignesh.si">
-                    vignesh.si
+            <p>Email: Add your email address here</p>
+
+            <div class="buttons" style="justify-content:center;">
+                <a class="btn primary"
+                   href="https://github.com/Vignesh-Poojary"
+                   target="_blank" rel="noopener noreferrer">
+                    Connect on GitHub ↗
+                    <style>
+                        
+section.content-section {
+    padding: 75px 8%;
+    scroll-margin-top: 80px;
+    background:
+        linear-gradient(
+            rgba(4, 10, 25, 0.91),
+            rgba(4, 10, 25, 0.96)
+        ),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85")
+        center / cover fixed;
+}
+
+.card {
+    background: rgba(7, 17, 37, 0.82);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 245, 255, 0.28);
+    border-radius: 14px;
+}
+
+                    </style>
                 </a>
-            </p>
-
-            <!-- Replace with your real public email -->
-            <p>
-                Email: your-email@example.com
-            </p>
-
-            <br>
-
-            <a
-                href="https://github.com/Vignesh-Poojary"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn primary">
-                Connect on GitHub
-            </a>
+            </div>
         </div>
     </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Vignesh Poojary | Built with HTML & CSS</p>
-        <p>Dream Big. Build Smart. Keep Learning. 🚀</p>
-    </footer>
+<footer>
+    <p>© 2026 <span>Vignesh Poojary</span> | VIGNESH.SI</p>
+    <p>Dream Big. Think Beyond. Keep Building. 🚀</p>
+</footer>
 
 </body>
 </html>
